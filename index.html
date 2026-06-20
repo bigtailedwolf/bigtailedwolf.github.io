@@ -1,3 +1,310 @@
-你好，我的名字是大尾巴狼
-<p>你好，我的名字是大尾巴狼</p>
-<p style="color:red">你好，我的名字是大尾巴狼</p>
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西伯利亚大尾巴狼</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Microsoft YaHei",sans-serif;
+    background:#0f172a;
+    color:#fff;
+    line-height:1.8;
+}
+
+a{
+    color:#7dd3fc;
+    text-decoration:none;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+h1{
+    font-size:4rem;
+    letter-spacing:5px;
+}
+
+.subtitle{
+    margin-top:20px;
+    font-size:1.3rem;
+    color:#cbd5e1;
+}
+
+.btn{
+    margin-top:30px;
+    padding:12px 30px;
+    border:2px solid #38bdf8;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#38bdf8;
+    color:#000;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:40px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.avatar{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.blog-list{
+    display:grid;
+    gap:20px;
+}
+
+.blog-item{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.blog-item:hover{
+    transform:translateY(-5px);
+}
+
+.tags span{
+    background:#334155;
+    padding:4px 10px;
+    border-radius:20px;
+    margin-right:8px;
+    font-size:12px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#94a3b8;
+    border-top:1px solid #334155;
+}
+
+#wolf{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#wolf:hover{
+    transform:scale(1.1) rotate(10deg);
+}
+
+#quote{
+    margin-top:20px;
+    color:#7dd3fc;
+    font-size:1.1rem;
+}
+
+@media(max-width:768px){
+    h1{
+        font-size:2.5rem;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .avatar{
+        margin:auto;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>西伯利亚大尾巴狼</h1>
+    <p class="subtitle">
+        工业设计学生 · OC创作者 · 脑洞生产车间主任
+    </p>
+
+    <a href="#about" class="btn">进入狼窝</a>
+
+    <div id="quote">
+        嗷呜——点击右下角狼头试试看
+    </div>
+</header>
+
+<section id="about">
+    <h2 class="section-title">关于我</h2>
+
+    <div class="about">
+
+        <img class="avatar"
+        src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80">
+
+        <div>
+            <div class="card">
+                <h3>自我介绍</h3>
+                <p>
+                    大家好，我是西伯利亚大尾巴狼。
+                    白天研究工业设计，
+                    晚上建设自己的OC世界观，
+                    凌晨思考为什么种植机永远比预期复杂。
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>技能树</h3>
+                <p>
+                    ● 工业设计<br>
+                    ● 产品建模<br>
+                    ● 世界观设定<br>
+                    ● OC设计<br>
+                    ● 三分钟热度研发工程师
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">博客文章</h2>
+
+    <div class="blog-list">
+
+        <div class="blog-item">
+            <h3>为什么我又重做家用种植机了</h3>
+            <div class="tags">
+                <span>工业设计</span>
+                <span>种植机</span>
+            </div>
+            <p>
+                从伸缩杆方案到抽拉结构方案，
+                再到导水层方案，
+                我终于明白设计最大的敌人不是技术，
+                是昨天的自己。
+            </p>
+        </div>
+
+        <div class="blog-item">
+            <h3>OC世界观开发日志01</h3>
+            <div class="tags">
+                <span>OC</span>
+                <span>科幻</span>
+            </div>
+            <p>
+                人类殖民外星，
+                外星病毒会把人变成矿石，
+                于是故事开始变得离谱起来。
+            </p>
+        </div>
+
+        <div class="blog-item">
+            <h3>我的执行力修炼计划</h3>
+            <div class="tags">
+                <span>成长</span>
+                <span>思考</span>
+            </div>
+            <p>
+                如何让一个草履虫级别执行力的人，
+                按时完成作品集。
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">联系方式</h2>
+
+    <div class="card">
+        <p>邮箱：yourmail@example.com</p>
+        <p>Bilibili：西伯利亚大尾巴狼</p>
+        <p>微博：西伯利亚大尾巴狼</p>
+        <p>GitHub：your-github</p>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 西伯利亚大尾巴狼
+        <br>
+        愿每个脑洞都有落地的一天。
+    </p>
+</footer>
+
+<img id="wolf"
+src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+
+<script>
+
+const quotes = [
+"狼今天什么都没干，但想了很多。",
+"一个好设计，往往经历了十几个废方案。",
+"作品集最大的敌人：明天再做。",
+"OC设定一分钟，填坑三个月。",
+"今天也在和拖延症进行战略合作。",
+"种植机：你以为快结束了？"
+];
+
+const wolf = document.getElementById("wolf");
+const quote = document.getElementById("quote");
+
+wolf.onclick = () => {
+    let random = Math.floor(Math.random()*quotes.length);
+    quote.innerText = quotes[random];
+}
+
+</script>
+
+</body>
+</html>
+```
